@@ -1,0 +1,19 @@
+.tableSize {
+    height: 200px;
+    overflow-x: auto;
+}
+
+.heading {
+    color: #224477;
+}
+
+.submitBtn {
+    background-color: #224477;
+    color: #FFFFFF;
+}
+
+.footer {
+    color: #2A2C35;
+    font-weight: 600;
+    font-size: 1rem;
+}
