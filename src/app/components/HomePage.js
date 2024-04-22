@@ -6,6 +6,7 @@ import axios from 'axios';
 import WeatherDisplay from './WeatherDisplay';
 import Image from 'next/image';
 import styles from "./style.module.css";
+import Recommendation from './Recommendation';
 
 const API_KEY = '535565f66c63f45de75d7508b8169a4d';
 
@@ -44,6 +45,7 @@ const IndexPage = () => {
             <div className='container'>
                 <h1 className={`${styles.heading} text-center mb-3 fw-semibold`}>Select Destinations</h1>
                 <InputForm onSubmit={fetchWeatherData} />
+                <Recommendation weatherData={weatherData} />
                 <WeatherDisplay weatherData={weatherData} />
             </div>
             <footer className={`${styles.footer} py-3`} style={{ textAlign: 'center', position: 'fixed', bottom: 0, width: '100%' }}>
